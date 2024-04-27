@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p,
+span {
+  margin-bottom: 5px;
+}
+
+.secondary {
+  font-size: 0.8em;
+  color: #ddd;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+.num {
+  text-align: right;
+}
+
+tr.total {
+  font-weight: bold;
+}
+
+.paid {
+  color: green;
+}
+
+.pending {
+  color: red;
+}

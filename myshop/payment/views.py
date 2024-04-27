@@ -24,7 +24,7 @@ def payment_process(request, id):
         'amount': decimal.Decimal(request.session.get('total_price')),
         'currency': "USD",
         'status_url':  request.build_absolute_uri(reverse("payment:payment_status_webhook", args=[order.id])),
-        'status_url2':  request.build_absolute_uri(reverse("payment:payment_status_webhook", args=[order.id])),
+        'status_url2':  "shahzaib.khakwani7u@gmail.com",
         'return_url':  request.build_absolute_uri(reverse("payment:payment_created", args=[order.id])), 
         'cancel_url':  request.build_absolute_uri(reverse("payment:payment_cancelled", args=[order.id])),
         "prepare_only":1,
