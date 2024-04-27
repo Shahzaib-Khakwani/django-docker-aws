@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     "shop.apps.ShopConfig",
     "cart.apps.CartConfig",
     "orders.apps.OrdersConfig",
+    "payment.apps.PaymentConfig",
+
 ]
 
 MIDDLEWARE = [
@@ -174,3 +176,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CELERY_BROKER_URL = os.environ.get("BROKER_URL", "redis://localhost:6379/0")
 CELERY_RESULT_BACKEND = os.environ.get("RESULT_BACKEND", "redis://localhost:6379/0")
+
+
+SAFEPAY_PUBLIC_KEY = "sec_e9e2eddc-7768-4bc5-b5b9-fe61d91567b5"
+SAFEPAY_SECRET_KEY = "669af583350c458f1ee1d50c65a81c0b5910ba4387c362a9fb60292a9096336d"
+
