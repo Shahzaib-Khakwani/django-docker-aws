@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-28 03:30-0700\n"
+"PO-Revision-Date: 2024-04-28 10:26+0000\n"
+"Last-Translator:   <admin@admin.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: orders/forms.py:8 orders/models.py:21
+msgid "first_name"
+msgstr "nombre"
+
+#: orders/forms.py:8 orders/models.py:22
+msgid "last_name"
+msgstr "apellidos"
+
+#: orders/forms.py:8 orders/models.py:24
+msgid "email"
+msgstr "email"
+
+#: orders/forms.py:8 orders/models.py:25
+msgid "address"
+msgstr "dirección"
+
+#: orders/forms.py:8 orders/models.py:26
+msgid "postal_code"
+msgstr "código postal"
+
+#: orders/forms.py:8 orders/models.py:27
+msgid "city"
+msgstr "ciudad"
+
+#: orders/templates/orders/order/create.html:4
+#: orders/templates/orders/order/create.html:7
+msgid "Checkout"
+msgstr "la caja"
+
+#: orders/templates/orders/order/create.html:12
+msgid "YOur Order"
+msgstr "tu pedido"
+
+#: orders/templates/orders/order/create.html:37
+msgid "Total"
+msgstr "total"
+
+#: orders/urls.py:10
+msgid "create/"
+msgstr "crear/"

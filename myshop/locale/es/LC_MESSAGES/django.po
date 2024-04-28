@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-28 02:16-0700\n"
+"PO-Revision-Date: 2024-04-28 09:20+0000\n"
+"Last-Translator:   <admin@admin.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: myshop/settings.py:162
+msgid "English"
+msgstr "Inglés"
+
+#: myshop/settings.py:163
+msgid "Spanish"
+msgstr "Español"
+
+#: myshop/urls.py:26
+msgid "cart/"
+msgstr "acarrear/"
+
+#: myshop/urls.py:27
+msgid "orders/"
+msgstr "las-órdenes/"
+
+#: myshop/urls.py:28
+msgid "payment/"
+msgstr "el-pago/"
+
+#: myshop/urls.py:29
+msgid "coupons/"
+msgstr "el-cupón/"
+
+#~ msgid "My shop"
+#~ msgstr "Mi tienda"
+
+#~ msgid "YOur Cart:"
+#~ msgstr "tu coche"
+
+#~ msgid "Add to cart"
+#~ msgstr "agregar al carrito"

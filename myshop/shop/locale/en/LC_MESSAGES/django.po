@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-28 03:30-0700\n"
+"PO-Revision-Date: 2024-04-28 10:47+0000\n"
+"Last-Translator:   <admin@admin.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: shop/templates/shop/base.html:7
+msgid "My shop"
+msgstr "MY SHOP"
+
+#: shop/templates/shop/base.html:15
+msgid "My Shop"
+msgstr ""
+
+#: shop/templates/shop/base.html:27
+msgid "Categories"
+msgstr ""
+
+#: shop/templates/shop/base.html:46
+msgid "Language"
+msgstr ""
+
+#: shop/templates/shop/base.html:69
+msgid "YOur Cart:"
+msgstr "Your Cart"
+
+#: shop/templates/shop/base.html:71
+#, python-format
+msgid ""
+"\n"
+"                %(items)s item , $%(total)s\n"
+"                "
+msgid_plural ""
+"\n"
+"                %(items)s items , $%(total)s\n"
+"                "
+msgstr[0] ""
+"\n"
+"%(items)s item , $%(total)s"
+msgstr[1] ""
+"\n"
+"%(items)s items , $%(total)s"
+
+#: shop/templates/shop/products/detail.html:31
+msgid "Add to cart"
+msgstr "Add to Cart"
