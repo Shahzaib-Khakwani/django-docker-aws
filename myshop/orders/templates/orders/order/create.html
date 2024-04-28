@@ -16,15 +16,22 @@ Checkout
                 <span>${{ item.total_price }}</span>
             </li>
             {% endfor %}
+            </br>
+            {% if cart.coupon %}
+            {% endif %}
         </ul>
-        
+        <li>
+            "{{ cart.coupon.code }}" ({{ cart.coupon.discount }}% off)
+        </br>
+            <span class="neg">- ${{ cart.get_discount|floatformat:2 }}</span>
+        </li>
         </div>
     </div>
     
 </div>
 <div class="row">
     <div class="col d-flex justify-content-center">
-        <p>Total: ${{ cart.get_total_price }}</p>
+        <p>Total: ${{ cart.get_total_price_after_discount }}</p>
     </div>
 </div>
     

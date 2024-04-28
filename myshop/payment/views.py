@@ -8,6 +8,7 @@ import decimal
 
 from orders.models import Order
 from orders.tasks import order_created
+from orders.tasks import payment_completed
 
 # Create your views here.
 
@@ -87,6 +88,7 @@ def created(request, id):
     order.transaction_id = request.session.get("transaction_id")
     order.save(update_fields=['transaction_id'])
     # order_created.delay(order.id, order.email)
+    # payment_completed.delay(order.id)
     return render(request, 'payment/created.html',{'order':order})
 
 def cancelled(request, id):

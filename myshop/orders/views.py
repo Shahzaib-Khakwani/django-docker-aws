@@ -24,7 +24,7 @@ from xhtml2pdf import pisa
 @staff_member_required
 def admin_order_pdf(request, order_id):
   order = get_object_or_404(Order, id=order_id)
-
+  print(order.get_total_cost())
   html = render_to_string('orders/order/pdf.html', {'order': order})
 
   response = HttpResponse(content_type='application/pdf')
@@ -39,8 +39,9 @@ def admin_order_pdf(request, order_id):
   if not result.err:
       return response
   else:
-      # Handle errors during PDF generation (optional)
-      raise Exception("Error generating PDF: %s" % result.err)@staff_member_required
+      raise Exception("Error generating PDF: %s" % result.err)
+
+@staff_member_required
 def admin_order_detail(request, order_id):
     order = get_object_or_404(Order, id=order_id)
     return  render(request, 'admin/orders/order/detail.html', {'order': order})
@@ -52,7 +53,11 @@ def order_create(request):
         form = OrderCreateForm(request.POST)
 
         if form.is_valid():
-            order = form.save()
+            order = form.save(commit=False)
+            if cart.coupon:
+                order.coupon = cart.coupon
+                order.discount = cart.coupon.discount
+            order.save()
             total_price = 0
             for item in cart:
                 OrderItem.objects.create(order=order,
@@ -60,11 +65,13 @@ def order_create(request):
                                 price=item['price'],
                                 quantity=item['quantity'],
                 )
-                total_price += item['price'] * item['quantity']
+            #     total_price += item['price'] * item['quantity']
             cart.clear()
             
 #  ----------------Payment Integration---------------------------# 
-            request.session['total_price'] = f"{total_price}"
+            print(cart.get_total_price_after_discount())
+            request.session['total_price'] = f"{cart.get_total_price_after_discount()}"
+            print(request.session.get("total_price"))
             return redirect(reverse('payment:payment_process', args=[order.id]))
             
             
