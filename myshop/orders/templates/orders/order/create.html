@@ -19,14 +19,10 @@
             {% endfor %}
             </br>
             {% if cart.coupon %}
-            <li>
-                {% blocktrnas with code = cart.coupon.code discount= cart.coupon.discount %}
-                "{{ code }}" ({{ discount }}% off)
-            </br>
-            <span class="neg">- ${{ cart.get_discount|floatformat:2 }}</span>
-            {% endblocktrnas %}
-        </li>
-        {% endif %}
+<li>
+<span class="neg">- ${{ cart.get_discount|floatformat:2 }}</span>
+</li>
+{% endif %}
     </ul>
         </div>
     </div>
